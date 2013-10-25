@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-740-. --><xs:schema xmlns:tns="http://model.br.ufjf/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://model.br.ufjf/">
+
+<xs:element name="obterIndividuosComInferencia" type="tns:obterIndividuosComInferencia" />
+
+<xs:element name="obterIndividuosComInferenciaResponse" type="tns:obterIndividuosComInferenciaResponse" />
+
+<xs:element name="obterSubclassesComInferencia" type="tns:obterSubclassesComInferencia" />
+
+<xs:element name="obterSubclassesComInferenciaResponse" type="tns:obterSubclassesComInferenciaResponse" />
+
+<xs:element name="obterSubclassesComInferenciaSparql" type="tns:obterSubclassesComInferenciaSparql" />
+
+<xs:element name="obterSubclassesComInferenciaSparqlResponse" type="tns:obterSubclassesComInferenciaSparqlResponse" />
+
+<xs:element name="obterSubclassesSemInferencia" type="tns:obterSubclassesSemInferencia" />
+
+<xs:element name="obterSubclassesSemInferenciaResponse" type="tns:obterSubclassesSemInferenciaResponse" />
+
+<xs:element name="obterSubclassesSemInferenciaSparql" type="tns:obterSubclassesSemInferenciaSparql" />
+
+<xs:element name="obterSubclassesSemInferenciaSparqlResponse" type="tns:obterSubclassesSemInferenciaSparqlResponse" />
+
+<xs:element name="obterVeiculosDeMarcio" type="tns:obterVeiculosDeMarcio" />
+
+<xs:element name="obterVeiculosDeMarcioResponse" type="tns:obterVeiculosDeMarcioResponse" />
+
+<xs:complexType name="obterSubclassesComInferencia">
+<xs:sequence>
+<xs:element name="file" type="xs:string" minOccurs="0" />
+<xs:element name="baseURI" type="xs:string" minOccurs="0" />
+<xs:element name="classe" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="obterSubclassesComInferenciaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="obterSubclassesSemInferenciaSparql">
+<xs:sequence>
+<xs:element name="file" type="xs:string" minOccurs="0" />
+<xs:element name="uri" type="xs:string" minOccurs="0" />
+<xs:element name="classe" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="obterSubclassesSemInferenciaSparqlResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="obterSubclassesSemInferencia">
+<xs:sequence>
+<xs:element name="file" type="xs:string" minOccurs="0" />
+<xs:element name="baseURI" type="xs:string" minOccurs="0" />
+<xs:element name="classe" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="obterSubclassesSemInferenciaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="obterVeiculosDeMarcio">
+<xs:sequence>
+<xs:element name="file" type="xs:string" minOccurs="0" />
+<xs:element name="uri" type="xs:string" minOccurs="0" />
+<xs:element name="entidade" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="obterVeiculosDeMarcioResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="obterIndividuosComInferencia">
+<xs:sequence>
+<xs:element name="file" type="xs:string" minOccurs="0" />
+<xs:element name="uri" type="xs:string" minOccurs="0" />
+<xs:element name="entidade" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="obterIndividuosComInferenciaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="obterSubclassesComInferenciaSparql">
+<xs:sequence>
+<xs:element name="file" type="xs:string" minOccurs="0" />
+<xs:element name="uri" type="xs:string" minOccurs="0" />
+<xs:element name="classe" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="obterSubclassesComInferenciaSparqlResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
